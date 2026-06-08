@@ -5,7 +5,8 @@ A real-time Machine Learning web application that classifies human emotional sta
 ## Developer Context
 This is my foundational Machine Learning deployment project, built during my first year of B.tech studying Computer Science with AI and Machine Learning. My objective was to move beyond just Jupyter Notebooks and build a complete, end to end MLOps pipeline handling high dimensional data, preventing data leakage and deploying a user interface.
 
-https://github.com/user-attachments/assets/9aefce05-dcb6-47a1-8424-4595aa2fd9d0
+## Project Demo
+<video src="dashboard.mp4" controls="controls" style="max-width: 100%;"></video>
 
 ## Dataset Acknowledgement
 This project utilizes the "EEG Brainwave Dataset: Feeling Emotions" sourced from Kaggle (authored by Jordan J. Bird). The original dataset provides statistical features (like mean and Fast Fourier Transforms) pre-extracted from raw EEG time-series data, allowing this project to focus directly on downstream classification architecture and MLOps deployment.
