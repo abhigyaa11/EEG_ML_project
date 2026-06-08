@@ -5,6 +5,8 @@ A real-time Machine Learning web application that classifies human emotional sta
 ## Developer Context
 This is my foundational Machine Learning deployment project, built during my first year of B.tech studying Computer Science with AI and Machine Learning. My objective was to move beyond just Jupyter Notebooks and build a complete, end to end MLOps pipeline handling high dimensional data, preventing data leakage and deploying a user interface.
 
+https://github.com/user-attachments/assets/78703765-9311-4465-9880-47170dfa5030
+
 ## Real World Utility
 While this is just a prototype, the underlying architecture mirrors real Brain-Computer interface applications:
 
