@@ -1,4 +1,4 @@
-# EEG Brainwave Diagnostic Dashboard
+## EEG Brainwave Diagnostic Dashboard
 
 A real-time Machine Learning web application that classifies human emotional states using 2,548 channels of EEG brainwave data.
 
