@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 streamlit
 pandas
 joblit
+=======
+streamlit
+pandas
+joblit
+>>>>>>> ebbbae7 (First professional push from VS Code)
 scikit-learn
