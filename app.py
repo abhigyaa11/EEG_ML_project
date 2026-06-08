@@ -2,6 +2,8 @@ import streamlit as st
 import joblib
 import pandas as pd
 import random 
+from sklearn.metrics import classification_report, confusion_matrix
+
 
 model = joblib.load("eeg_brain.pkl") # loading the AI our model
 df = pd.read_csv("test_emotions.csv") # loading the database
@@ -10,7 +12,7 @@ df = pd.read_csv("test_emotions.csv") # loading the database
 
 # Designing the dashboard-------------------------------------------------------------------------------------------------------
 
-st.title("EEG diagnostic dashboard")
+st.title("EEG Diagnostic Dashboard")
 st.markdown("### Real Time patient emotional state classifier using brainwaves")
 st.markdown("---")
 st.sidebar.header("Control panel")
@@ -29,7 +31,7 @@ if st.sidebar.button("scan incoming patient"):
 
     # display the data
     st.write("#### hardware data stream incoming...")
-    st.write(f"**patient ID: **{random_index}")
+    st.write(f"**patient ID:**{random_index}")
     # visualising the wave of eeg
     wave_sample = patient_data[500:600]
     st.line_chart(wave_sample)
@@ -52,4 +54,15 @@ if st.sidebar.button("scan incoming patient"):
 
     if prediction == patient_state:
         st.balloons()
+
+        # We calculate predictions for the whole test dataset so we can show the stats
+        X_test = df.drop("label", axis=1)
+        y_test = df["label"]
+        y_pred = model.predict(X_test)
+
+        st.sidebar.markdown("---")
+        st.sidebar.write("### Model Performance Metrics")
+        
+        with st.sidebar.expander("View Full Report"):
+            st.text(classification_report(y_test, y_pred))
 
