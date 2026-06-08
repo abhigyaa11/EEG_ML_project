@@ -7,6 +7,9 @@ This is my foundational Machine Learning deployment project, built during my fir
 
 https://github.com/user-attachments/assets/78703765-9311-4465-9880-47170dfa5030
 
+## Dataset Acknowledgement
+This project utilizes the "EEG Brainwave Dataset: Feeling Emotions" sourced from Kaggle (authored by Jordan J. Bird). The original dataset provides statistical features (like mean and Fast Fourier Transforms) pre-extracted from raw EEG time-series data, allowing this project to focus directly on downstream classification architecture and MLOps deployment.
+
 ## Real World Utility
 While this is just a prototype, the underlying architecture mirrors real Brain-Computer interface applications:
 
